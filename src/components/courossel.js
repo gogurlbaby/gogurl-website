@@ -15,22 +15,22 @@ import salad from '../images/salad.jpg'
 
 const Courossel = () => {
     return (
-        <MDBCarousel showControls>
+        <MDBCarousel style={{marginTop: "10vh", mariginBottom:" 10vh"}}>
             <MDBCarouselInner>
                 <MDBCarouselItem itemId={0}>
-                    <MDBCarouselElement src={exercise} alt='...' />
+                    <MDBCarouselElement src={exercise} style={{height: '100vh'}} />
                     <MDBCarouselCaption>
                         <h4>hello</h4>
                     </MDBCarouselCaption>
                 </MDBCarouselItem>
                 <MDBCarouselItem itemId={1}>
-                    <MDBCarouselElement src={monika} alt='...' />
+                    <MDBCarouselElement src={monika} style={{height: '100vh'}}/>
                     <MDBCarouselCaption>
                         <h4>hello, there</h4>
                     </MDBCarouselCaption>
                 </MDBCarouselItem>
                 <MDBCarouselItem itemId={2}>
-                    <MDBCarouselElement src={salad} alt='...' />
+                    <MDBCarouselElement src={salad} style={{height: '100vh'}}/>
                     <MDBCarouselCaption>
                         <h4>hey, you</h4>
                     </MDBCarouselCaption>

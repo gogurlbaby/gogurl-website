@@ -6,7 +6,8 @@ import dietitian from '../images/dietitian.jpg';
 import exercise from '../images/exercise.jpg';
 import Provenance from '../images/Provenance.jpg';
 import Exercises from '../images/Exercises.jpg';
-
+import Courossel from './courossel.js';
+import Footer from './Footer.js';
 import {
     Button,
     Container,
@@ -23,7 +24,20 @@ import {
 } from 'semantic-ui-react';
 
 const HomepageLayout = () => {
-    const pics = [dietitian,Provenance, Exercises]
+    const details = [{
+        image: dietitian,
+        content:"consultation with dieticition"
+        },
+        {
+            image: Provenance,
+            content: 'Healthy food delivery',
+
+        },
+        {
+            image: Exercises,
+            content: "fitness Exercises"
+        }
+        ]
     return (
         <ResponsiveContainer>
             <Segment style={{ padding: '8em 0em' }} vertical>
@@ -51,7 +65,7 @@ const HomepageLayout = () => {
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column textAlign='center'>
-                            <Button size='huge'>Check Them Out</Button>
+                            <Button size='huge' primary>Check Them Out</Button>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
@@ -112,6 +126,9 @@ const HomepageLayout = () => {
                         I'm Still Quite Interested
                     </Button>
                 </Container>
+                <Container style={{padding: "10vh", margin: "1px solid black"}}>
+                    <Courossel/>
+                </Container>
                 <Segment vertical style={{marginTop: '10vh'}}>
                 <Container >
                     <Divider
@@ -122,12 +139,13 @@ const HomepageLayout = () => {
                     >
                          <a href='#'>Services</a>
                     </Divider>
-                    <Grid stackable>
+                    <Grid container verticalAlign="middle" stackable >
                         <Grid.Row>
-                            {pics.map((pic) => {
+                            {details.map(({image, content}) => {
                                 return <Grid.Column width={5}>
                                     <ServicesCard
-                                    images = {pic}
+                                    images = {image}
+                                    content = {content}
                                     />
                                 </Grid.Column> 
                             })}
@@ -137,40 +155,7 @@ const HomepageLayout = () => {
 
             </Segment>
             </Segment>
-            <Segment inverted vertical style={{ padding: '5em 0em' }}>
-                <Container>
-                    <Grid divided inverted stackable>
-                        <Grid.Row>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='About' />
-                                <List link inverted>
-                                    <List.Item as='a'>Sitemap</List.Item>
-                                    <List.Item as='a'>Contact Us</List.Item>
-                                    <List.Item as='a'>Religious Ceremonies</List.Item>
-                                    <List.Item as='a'>Gazebo Plans</List.Item>
-                                </List>
-                            </Grid.Column>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='Services' />
-                                <List link inverted>
-                                    <List.Item as='a'>Banana Pre-Order</List.Item>
-                                    <List.Item as='a'>DNA FAQ</List.Item>
-                                    <List.Item as='a'>How To Access</List.Item>
-                                    <List.Item as='a'>Favorite X-Men</List.Item>
-                                </List>
-                            </Grid.Column>
-                            <Grid.Column width={7}>
-                                <Header as='h4' inverted>
-                                    Footer Header
-                                </Header>
-                                <p>
-                                    Extra space for a call to action inside the footer that could help re-engage users.
-                                </p>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-                </Container>
-            </Segment>
+           <Footer />                 
            
         </ResponsiveContainer>
     )
