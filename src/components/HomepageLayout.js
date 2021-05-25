@@ -97,9 +97,9 @@ const HomepageLayout = () => {
                         
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                        Instead of focusing on content creation and hard work, we have learned how to master the
-                        art of doing nothing by providing massive amounts of whitespace and generic content that
-                        can seem massive, monolithic and worth your attention.
+                    We struggle with eating healthily, obesity, and access to good nutrition for everyone. 
+                    But we have a great opportunity to get on the right side of this battle by beginning to 
+                    think differently about the way that we eat and the way that we approach food
                     </p>
                     <Button as='a' size='large'>
                         Read More
