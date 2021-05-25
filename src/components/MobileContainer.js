@@ -51,11 +51,11 @@ const MobileContainer = ({children}) => {
                     visible={sidebarOpened}
                 >
                     <Menu.Item as='a' active>
-                        Home
+                        GoGurl
                     </Menu.Item>
-                    <Menu.Item as='a'>Work</Menu.Item>
-                    <Menu.Item as='a'>Company</Menu.Item>
-                    <Menu.Item as='a'>Careers</Menu.Item>
+                    <Menu.Item as='a'>Home</Menu.Item>
+                    <Menu.Item as='a'>Services</Menu.Item>
+                    <Menu.Item as='a'>Contact</Menu.Item>
                     <Menu.Item as='a'>Log in</Menu.Item>
                     <Menu.Item as='a'>Sign Up</Menu.Item>
                 </Sidebar>
