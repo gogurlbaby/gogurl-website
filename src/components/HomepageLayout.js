@@ -52,11 +52,11 @@ const HomepageLayout = () => {
                                 Let us delight your customers and empower your needs... through pure data analytics.
                             </p>
                             <Header as='h3' style={{ fontSize: '2em' }}>
-                                We Make Bananas That Can Dance
+                                FEEL GOOD!! LIVE LONGER!!
                             </Header>
                             <p style={{ fontSize: '1.33em' }}>
-                                Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-                                bioengineered.
+                                With good guidance from professional dietitians
+                                its possible to live healthy and longer
                             </p>
                         </Grid.Column>
                         <Grid.Column floated='right' width={6}>
@@ -94,7 +94,7 @@ const HomepageLayout = () => {
             <Segment style={{ padding: '8em 0em' }} vertical>
                 <Container text>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                        Breaking The Grid, Grabs Your Attention
+                        
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
                         Instead of focusing on content creation and hard work, we have learned how to master the
@@ -115,12 +115,11 @@ const HomepageLayout = () => {
                     </Divider>
 
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                        Did We Tell You About Our Bananas?
+                        Why GoGurl?
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                        Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-                        it's really true. It took years of gene splicing and combinatory DNA research, but our
-                        bananas can really dance.
+                        Today, more than 95% of all chronic disease is caused by food choice, 
+                        toxic food ingredients nutritional deficiencies and lack of physical exercise
                     </p>
                     <Button as='a' size='large'>
                         I'm Still Quite Interested
