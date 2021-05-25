@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import './Router';
+import Router from './Router.js';
 
 ReactDOM.render(
   <React.StrictMode>
