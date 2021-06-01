@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Button,
     Container,
@@ -70,7 +71,7 @@ const DesktopContainer = ({ children }) => {
                             <Menu.Item as='a' active>
                                 GoGurl
                             </Menu.Item>
-                            <Menu.Item as='a'>Home</Menu.Item>
+                            <Menu.Item as={Link} to="/dashboard">Home</Menu.Item>
                             <Menu.Item as='a'>Company</Menu.Item>
                             <Menu.Item as='a'>Services</Menu.Item>
                             <Menu.Item position='right'>
