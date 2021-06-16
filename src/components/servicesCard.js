@@ -9,10 +9,10 @@ const ServicesCard = ({images, content}) =>{
     <Image src={images} wrapped ui={false}/>
     <Card.Content>
       <Card.Header>{content}</Card.Header>
-      <Card.Meta>Joined in 2016</Card.Meta>
-      <Card.Description>
+      {/* <Card.Meta>Joined in 2016</Card.Meta> */}
+      {/* <Card.Description>
         Daniel is a comedian living in Nashville.
-      </Card.Description>
+      </Card.Description> */}
     </Card.Content>
   </Card>
 )

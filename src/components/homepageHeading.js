@@ -47,7 +47,7 @@ const HomepageHeading = ({ mobile }) => {
             />
             <Header
                 as='h2'
-                content='Do whatever you want when you want to.'
+                content='The best investment you can ever make is your own health.'
                 inverted
                 style={{
                     fontSize: mobile ? '1.5em' : '1.7em',

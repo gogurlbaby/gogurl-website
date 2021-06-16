@@ -21,29 +21,29 @@ const Footer = () =>{
                     <Grid divided inverted stackable>
                         <Grid.Row>
                             <Grid.Column width={3}>
-                                <Header inverted as='h4' content='About' />
+                                <Header inverted as='h4' content='GoGurl' />
                                 <List link inverted>
-                                    <List.Item as='a'>Sitemap</List.Item>
-                                    <List.Item as='a'>Contact Us</List.Item>
-                                    <List.Item as='a'>Religious Ceremonies</List.Item>
-                                    <List.Item as='a'>Gazebo Plans</List.Item>
+                                    <List.Item as='a'>Services</List.Item>
+                                    <List.Item as='a'>Contact</List.Item>
+                                    <List.Item as='a'>Log In</List.Item>
+                                    <List.Item as='a'>Sign Up</List.Item>
                                 </List>
                             </Grid.Column>
                             <Grid.Column width={3}>
                                 <Header inverted as='h4' content='Services' />
                                 <List link inverted>
-                                    <List.Item as='a'>Banana Pre-Order</List.Item>
-                                    <List.Item as='a'>DNA FAQ</List.Item>
-                                    <List.Item as='a'>How To Access</List.Item>
-                                    <List.Item as='a'>Favorite X-Men</List.Item>
+                                    <List.Item as='a'>Consultation With Dietitian</List.Item>
+                                    <List.Item as='a'>Fitness Exercises</List.Item>
+                                    <List.Item as='a'>Healthy Food</List.Item>
+                                    {/* <List.Item as='a'>Favorite X-Men</List.Item> */}
                                 </List>
                             </Grid.Column>
                             <Grid.Column width={7}>
                                 <Header as='h4' inverted>
-                                    Footer Header
+                                GoGurl Dietetics
                                 </Header>
                                 <p>
-                                    Extra space for a call to action inside the footer that could help re-engage users.
+                                © 2021. All Rights Reserved | Powered by gogurl.com
                                 </p>
                             </Grid.Column>
                         </Grid.Row>

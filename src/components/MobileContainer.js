@@ -51,7 +51,7 @@ const MobileContainer = ({children}) => {
                     visible={sidebarOpened}
                 >
                     <Menu.Item as='a' active>
-                        GoGurl
+                        <h3>GoGurl Dietetics</h3>
                     </Menu.Item>
                     <Menu.Item as='a'>Home</Menu.Item>
                     <Menu.Item as='a'>Services</Menu.Item>

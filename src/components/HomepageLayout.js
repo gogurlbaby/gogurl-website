@@ -6,7 +6,7 @@ import dietitian from '../images/dietitian.jpg';
 import exercise from '../images/exercise.jpg';
 import Provenance from '../images/Provenance.jpg';
 import Exercises from '../images/Exercises.jpg';
-import Courossel from './courossel.js';
+import Carousel from './carousel.js';
 import Footer from './Footer.js';
 import {
     Button,
@@ -26,18 +26,18 @@ import {
 const HomepageLayout = () => {
     const details = [{
         image: dietitian,
-        content:"consultation with dieticition"
+        content:"Consultation with Dietitian"
         },
-        {
-            image: Provenance,
-            content: 'Healthy food delivery',
+        {    image: Exercises,
+            content: "Fitness Exercises"
+              
 
         },
-        {
-            image: Exercises,
-            content: "fitness Exercises"
+        {    image: Provenance,
+            content: 'Healthy Food Delivery',   
+           
         }
-        ]
+       ]
     return (
         <ResponsiveContainer>
             <Segment style={{ padding: '8em 0em' }} vertical>
@@ -45,18 +45,21 @@ const HomepageLayout = () => {
                     <Grid.Row>
                         <Grid.Column width={8}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
-                                We Help Companies and Companions
+                            Why GoGurl? 
                         </Header>
                             <p style={{ fontSize: '1.33em' }}>
-                                We can give your company superpowers to do things that they never thought possible.
-                                Let us delight your customers and empower your needs... through pure data analytics.
+                            Today, more than 95% of all chronic disease is caused by 
+                            food choice, toxic food ingredients nutritional deficiences
+                             and lack of physical exercise.
+
                             </p>
                             <Header as='h3' style={{ fontSize: '2em' }}>
                                 FEEL GOOD!! LIVE LONGER!!
                             </Header>
                             <p style={{ fontSize: '1.33em' }}>
-                                With good guidance from professional dietitians
-                                its possible to live healthy and longer
+                            With good guidance from professional dietitians 
+                            its possible to live healthy and live longer!
+
                             </p>
                         </Grid.Column>
                         <Grid.Column floated='right' width={6}>
@@ -70,7 +73,7 @@ const HomepageLayout = () => {
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Segment style={{ padding: '0em' }} vertical>
+            {/* <Segment style={{ padding: '0em' }} vertical>
                 <Grid celled='internally' columns='equal' stackable>
                     <Grid.Row textAlign='center'>
                         <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -90,7 +93,7 @@ const HomepageLayout = () => {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Segment>
+            </Segment> */}
             <Segment style={{ padding: '8em 0em' }} vertical>
                 <Container text>
                     <Header as='h3' style={{ fontSize: '2em' }}>
@@ -115,18 +118,19 @@ const HomepageLayout = () => {
                     </Divider>
 
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                        Why GoGurl?
+                    Invest in your Health
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                        Today, more than 95% of all chronic disease is caused by food choice, 
-                        toxic food ingredients nutritional deficiencies and lack of physical exercise
+                    The doctor of the future will no longer treat the human frame with drugs, 
+                        but rather will cure and prevent disease with nutrition. 
+
                     </p>
                     <Button as='a' size='large'>
                         I'm Still Quite Interested
                     </Button>
                 </Container>
                 <Container style={{padding: "10vh", margin: "1px solid black"}}>
-                    <Courossel/>
+                    <Carousel/>
                 </Container>
                 <Segment vertical style={{marginTop: '10vh'}}>
                 <Container >

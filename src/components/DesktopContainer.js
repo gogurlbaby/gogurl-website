@@ -69,11 +69,11 @@ const DesktopContainer = ({ children }) => {
                         >
                         <Container>
                             <Menu.Item as='a' active>
-                                GoGurl
+                               <h3>GoGurl Dietetics</h3> 
                             </Menu.Item>
                             <Menu.Item as={Link} to="/dashboard">Home</Menu.Item>
-                            <Menu.Item as='a'>Company</Menu.Item>
                             <Menu.Item as='a'>Services</Menu.Item>
+                            <Menu.Item as='a'>Contact</Menu.Item>
                             <Menu.Item position='right'>
                                 <Button as='a' inverted={!fixed}>
                                     Log in
