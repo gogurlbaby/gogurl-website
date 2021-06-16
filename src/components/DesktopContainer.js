@@ -76,10 +76,10 @@ const DesktopContainer = ({ children }) => {
                             <Menu.Item as='a'>Contact</Menu.Item>
                             <Menu.Item position='right'>
                                 <Button as='a' inverted={!fixed}>
-                                    Log in
+                                <Link to = "/login" >Log in</Link>
                                 </Button>
                                 <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                                    Sign Up
+                                <Link to = "/signup">Sign Up</Link>
                                 </Button>
                             </Menu.Item>
                         </Container>

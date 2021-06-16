@@ -70,7 +70,7 @@ const Login = () => {
                 </MDBCol>
             </MDBRow>
         </MDBContainer>
-        <Footer />
+        {/* <Footer /> */}
         </div>
     );
 };

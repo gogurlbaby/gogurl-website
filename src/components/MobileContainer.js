@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import HomepageHeading from './homepageHeading';
-
+import { Link } from 'react-router-dom';
 import {
     Button,
     Container,
@@ -56,8 +56,8 @@ const MobileContainer = ({children}) => {
                     <Menu.Item as='a'>Home</Menu.Item>
                     <Menu.Item as='a'>Services</Menu.Item>
                     <Menu.Item as='a'>Contact</Menu.Item>
-                    <Menu.Item as='a'>Log in</Menu.Item>
-                    <Menu.Item as='a'>Sign Up</Menu.Item>
+                    <Menu.Item as='a'><Link to = "/login" >Log In</Link></Menu.Item>
+                    <Menu.Item as='a'><Link to = "/signup">Sign Up</Link></Menu.Item>
                 </Sidebar>
 
                 <Sidebar.Pusher dimmed={sidebarOpened}>
